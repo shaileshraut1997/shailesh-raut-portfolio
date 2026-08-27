@@ -13,11 +13,6 @@
   min-height: 100vh;
 }
 
-
-/* =========================================================
-   MAIN
-   ========================================================= */
-
 main {
   width: 100%;
   overflow: hidden;
@@ -72,9 +67,6 @@ main {
   box-shadow: var(--shadow-sm);
 }
 
-
-/* Navigation Container */
-
 .nav-container {
   max-width: var(--container-width);
 
@@ -91,7 +83,9 @@ main {
 }
 
 
-/* Logo */
+/* =========================================================
+   LOGO
+   ========================================================= */
 
 .logo {
   display: flex;
@@ -129,7 +123,9 @@ main {
 }
 
 
-/* Navigation Links */
+/* =========================================================
+   NAVIGATION LINKS
+   ========================================================= */
 
 .nav-links {
   display: flex;
@@ -177,7 +173,9 @@ main {
 }
 
 
-/* Mobile Menu Button */
+/* =========================================================
+   MOBILE MENU
+   ========================================================= */
 
 .menu-toggle {
   display: none;
@@ -267,7 +265,9 @@ main {
 }
 
 
-/* Hero Container */
+/* =========================================================
+   HERO CONTAINER
+   ========================================================= */
 
 .hero-container {
   position: relative;
@@ -291,7 +291,9 @@ main {
 }
 
 
-/* Hero Content */
+/* =========================================================
+   HERO CONTENT
+   ========================================================= */
 
 .hero-content {
   max-width: 700px;
@@ -326,11 +328,14 @@ main {
 
   background: #22c55e;
 
-  box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.12);
+  box-shadow:
+    0 0 0 4px rgba(34, 197, 94, 0.12);
 }
 
 
-/* Hero Title */
+/* =========================================================
+   HERO TITLE
+   ========================================================= */
 
 .hero-title {
   margin-bottom: 22px;
@@ -349,7 +354,9 @@ main {
 }
 
 
-/* Hero Subtitle */
+/* =========================================================
+   HERO ROLE
+   ========================================================= */
 
 .hero-role {
   margin-bottom: 22px;
@@ -364,12 +371,14 @@ main {
 }
 
 
-/* Hero Description */
+/* =========================================================
+   HERO DESCRIPTION
+   ========================================================= */
 
 .hero-description {
   max-width: 650px;
 
-  margin-bottom: 32px;
+  margin-bottom: 18px;
 
   color: var(--text-light);
 
@@ -379,7 +388,35 @@ main {
 }
 
 
-/* Hero Buttons */
+/* =========================================================
+   HERO LOCATION
+   ========================================================= */
+
+.hero-location {
+  display: flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  margin-bottom: 25px;
+
+  color: var(--text-light);
+
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.hero-location svg {
+  color: var(--primary);
+
+  flex-shrink: 0;
+}
+
+
+/* =========================================================
+   HERO BUTTONS
+   ========================================================= */
 
 .hero-buttons {
   display: flex;
@@ -394,7 +431,9 @@ main {
 }
 
 
-/* Hero Social Links */
+/* =========================================================
+   HERO SOCIAL LINKS
+   ========================================================= */
 
 .hero-socials {
   display: flex;
@@ -463,9 +502,6 @@ main {
   justify-content: center;
 }
 
-
-/* Photo Background */
-
 .hero-image-container::before {
   content: "";
 
@@ -482,9 +518,6 @@ main {
   box-shadow:
     0 25px 60px rgba(99, 102, 241, 0.25);
 }
-
-
-/* Photo */
 
 .hero-image {
   position: relative;
@@ -504,7 +537,9 @@ main {
 }
 
 
-/* Floating Badge */
+/* =========================================================
+   HERO EXPERIENCE BADGE
+   ========================================================= */
 
 .hero-badge {
   position: absolute;
@@ -552,6 +587,14 @@ main {
   background: var(--gradient-primary);
 }
 
+.hero-badge span {
+  color: var(--text-light);
+
+  font-size: 11px;
+
+  font-weight: 500;
+}
+
 
 /* =========================================================
    ABOUT SECTION
@@ -566,9 +609,6 @@ main {
 
   align-items: center;
 }
-
-
-/* About Visual */
 
 .about-visual {
   position: relative;
@@ -627,9 +667,6 @@ main {
   -webkit-text-fill-color: transparent;
 }
 
-
-/* About Content */
-
 .about-content h3 {
   margin-bottom: 20px;
 
@@ -646,7 +683,9 @@ main {
 }
 
 
-/* About Stats */
+/* =========================================================
+   ABOUT STATS
+   ========================================================= */
 
 .about-stats {
   display: grid;
@@ -827,7 +866,8 @@ main {
 
   border: 5px solid var(--primary);
 
-  box-shadow: 0 0 0 5px rgba(99, 102, 241, 0.08);
+  box-shadow:
+    0 0 0 5px rgba(99, 102, 241, 0.08);
 }
 
 .experience-card {
@@ -1285,18 +1325,37 @@ main {
 
 
 /* =========================================================
+   FADE ANIMATION
+   ========================================================= */
+
+.fade-up {
+  animation: fadeUp 0.8s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+}
+
+
+/* =========================================================
    RESPONSIVE - TABLET
    ========================================================= */
 
 @media (max-width: 992px) {
 
-  /* Navigation */
-
   .nav-links {
     gap: 18px;
   }
-
-  /* Hero */
 
   .hero-container {
     grid-template-columns: 1fr;
@@ -1317,12 +1376,14 @@ main {
     margin-right: auto;
   }
 
+  .hero-location {
+    justify-content: center;
+  }
+
   .hero-buttons,
   .hero-socials {
     justify-content: center;
   }
-
-  /* About */
 
   .about-grid {
     grid-template-columns: 1fr;
@@ -1333,8 +1394,6 @@ main {
   .about-visual {
     min-height: 350px;
   }
-
-  /* Skills */
 
   .skills-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -1347,8 +1406,6 @@ main {
    ========================================================= */
 
 @media (max-width: 768px) {
-
-  /* Navigation */
 
   .navbar {
     height: 68px;
@@ -1390,6 +1447,7 @@ main {
   .menu-toggle {
     display: flex;
   }
+
 
   /* Hero */
 
@@ -1435,17 +1493,20 @@ main {
     bottom: 20px;
   }
 
+
   /* About */
 
   .about-stats {
     grid-template-columns: 1fr;
   }
 
+
   /* Skills */
 
   .skills-grid {
     grid-template-columns: 1fr;
   }
+
 
   /* Experience */
 
@@ -1469,11 +1530,13 @@ main {
     align-self: flex-start;
   }
 
+
   /* Projects */
 
   .projects-grid {
     grid-template-columns: 1fr;
   }
+
 
   /* Certifications */
 
@@ -1481,11 +1544,13 @@ main {
     grid-template-columns: 1fr;
   }
 
+
   /* Education */
 
   .education-grid {
     grid-template-columns: 1fr;
   }
+
 
   /* Contact */
 
