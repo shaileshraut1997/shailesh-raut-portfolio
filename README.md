@@ -96,22 +96,27 @@ React Application
 
 
 🛠️ Technology Stack
+--------------------
 Frontend
 React.js
 JavaScript (ES6+)
 HTML5
 CSS3
+
 Build Tool
 Vite
+
 Version Control
 Git
 GitHub
+
 Hosting
 GitHub Pages
 
 
 
 📁 Project Structure
+----------------------
 shailesh-raut-portfolio/
 │
 ├── public/
@@ -225,6 +230,17 @@ Add LinkedIn profile URL
 Build simple. Automate where it matters.
 Keep learning. Keep improving.
 
+
+⭐ Languages / Technologies
+------------------------------
+Technology	         Purpose
+React.js	           Build the modern UI
+JavaScript (ES6+)	   Website functionality
+HTML5	               Page structure
+CSS3	               Styling, animations & responsive design
+Vite	               Fast development/build tool
+Git & GitHub	       Version control
+GitHub Pages	       Free website hosting
 
 ### One important point
 
