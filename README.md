@@ -72,3 +72,168 @@ The main goals of this portfolio are:
         │   About   │      │  Skills   │      │  Social   │
         │ Experience│      │ Education │      │   Links   │
         └───────────┘      └───────────┘      └───────────┘
+
+
+
+Architecture Flow
+User
+  │
+  ▼
+GitHub Pages
+  │
+  ▼
+React Application
+  │
+  ├── Home
+  ├── About
+  ├── Experience
+  ├── Skills
+  ├── Projects
+  ├── Certifications
+  ├── Education
+  └── Contact
+
+
+
+🛠️ Technology Stack
+Frontend
+React.js
+JavaScript (ES6+)
+HTML5
+CSS3
+Build Tool
+Vite
+Version Control
+Git
+GitHub
+Hosting
+GitHub Pages
+
+
+
+📁 Project Structure
+shailesh-raut-portfolio/
+│
+├── public/
+│   ├── profile/
+│   │   └── profile-photo.jpg
+│   │
+│   ├── resume/
+│   │   └── Shailesh-Raut-Resume.pdf
+│   │
+│   └── favicon.png
+│
+├── src/
+│   │
+│   ├── assets/
+│   │
+│   ├── components/
+│   │   ├── Header.jsx
+│   │   ├── Hero.jsx
+│   │   ├── About.jsx
+│   │   ├── Skills.jsx
+│   │   ├── Experience.jsx
+│   │   ├── Projects.jsx
+│   │   ├── Certifications.jsx
+│   │   ├── Education.jsx
+│   │   ├── Contact.jsx
+│   │   └── Footer.jsx
+│   │
+│   ├── data/
+│   │   └── portfolioData.js
+│   │
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.jsx
+│
+├── .gitignore
+├── index.html
+├── package.json
+├── vite.config.js
+└── README.md
+
+
+
+✨ UI Features
+
+The website will include:
+
+Modern hero section
+Professional profile photo
+Colorful gradient elements
+Smooth scrolling
+Section animations
+Skill cards
+Project cards
+Timeline-style experience section
+Responsive navigation
+Mobile menu
+Hover effects
+Resume download button
+Social media links
+Clean typography
+Professional color scheme
+
+
+
+
+🔐 Security
+
+This is a frontend-only portfolio website.
+
+No sensitive information such as:
+
+Passwords
+API keys
+Cloud credentials
+Access tokens
+Private keys
+
+will be stored in the repository.
+
+📈 Future Enhancements
+
+Possible future improvements:
+
+Blog section
+Technical articles
+Downloadable project architecture diagrams
+Contact form
+Dark/Light mode
+Project filtering
+GitHub API integration
+Analytics
+Custom domain
+📄 License
+
+This project is created for personal and professional portfolio purposes.
+
+👤 Author
+
+Shailesh Raut
+DevOps Engineer
+
+GitHub:
+https://github.com/shaileshraut1997
+
+LinkedIn:
+Add LinkedIn profile URL
+
+⭐ Portfolio Philosophy
+
+Build simple. Automate where it matters.
+Keep learning. Keep improving.
+
+
+### One important point
+
+For your case, I would choose this stack:
+
+**React + Vite + JavaScript + CSS + GitHub Pages**
+
+rather than a complicated stack.
+
+The final repository will be a **real modern website**, not just a README pretending to be a portfolio. Your **photo, resume information, experience, projects and skills** will be displayed as actual website sections.
+
+Once you upload your resume, we can build the actual `src/` files around your real information.
